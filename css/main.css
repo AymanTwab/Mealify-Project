@@ -1,0 +1,408 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    font-family: var(--font-default);
+}
+
+:root {
+    /* color */
+    --main-clr: #ce1212;
+    --second-clr: #212529;
+    --third-clr: #37373f;
+    --fourth-clr: #7f7f90;
+    /* background-color */
+    --main-bg: #fff;
+    --second-bg: #eee;
+    /* fonts */
+    --font-default: system-ui;
+    --font-primary: "Amatic SC", sans-serif;
+    --font-secondary: "Inter", sans-serif;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5625rem 0.3125rem;
+
+}
+
+h2.section-title {
+    font-family: var(--font-secondary);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--fourth-clr);
+}
+
+p.section-description {
+    font-family: var(--font-primary);
+    font-size: 50px;
+    color: var(--second-clr);
+}
+
+span.main-clr {
+    color: var(--main-clr);
+}
+
+/* nav-section */
+
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: var(--main-bg);
+    box-shadow: 0px 0px 14px 0px #0000001b;
+    justify-content: center;
+    z-index: 100;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav .logo {
+    width: auto;
+}
+
+nav .logo a {
+    color: var(--second-clr);
+    font-size: 30px;
+}
+
+nav .logo h1 {
+    position: relative;
+}
+
+nav .logo h1::after {
+    content: "";
+    background-color: var(--main-clr);
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: 65%;
+    border-radius: 50%;
+
+}
+
+nav .links {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+nav .dark-mode-btn {
+    width: auto;
+}
+
+nav .links ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .links .item {
+    margin: 5px 15px;
+    position: relative;
+
+}
+
+nav .links li a {
+    color: var(--fourth-clr);
+    position: relative;
+}
+
+nav .links li a:hover {
+    color: #000;
+}
+
+nav .links a::before {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    width: 0%;
+    height: 2px;
+    background-color: var(--main-clr);
+    transition: width 0.3s;
+}
+
+nav .nav-items a:hover::before {
+    width: 100%;
+}
+
+body:has(.home:target) nav .links li a.home-link {
+    color: #000;
+}
+
+body:has(.home:target) nav .links li a.home-link::before {
+    width: 100%;
+}
+
+body:has(.chefs:target) nav .links li a.chefs-link {
+    color: #000;
+}
+
+body:has(.chefs:target) nav .links li a.chefs-link::before {
+    width: 100%;
+}
+
+body:has(.gallery:target) nav .links li a.gallery-link {
+    color: #000;
+}
+
+body:has(.gallery:target) nav .links li a.gallery-link::before {
+    width: 100%;
+}
+
+body:has(.contact:target) nav .links li a.contact-link {
+    color: #000;
+}
+
+body:has(.contact:target) nav .links li a.contact-link::before {
+    width: 100%;
+}
+
+
+nav .dark-mode-btn i {
+    font-size: 25px;
+    font-weight: 900;
+    color: var(--second-clr);
+}
+
+/* home section */
+
+.home {
+    height: 100vh;
+    background-color: var(--second-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.home .container {
+    margin-top: 100px;
+}
+
+.home .home-content {
+    width: 40%;
+}
+
+.home .home-image {
+    width: 40%;
+}
+
+.home .home-image img {
+    width: 100%;
+}
+
+h2 {
+    font-family: var(--font-primary);
+    font-size: 65px;
+    color: #37373F;
+}
+
+p {
+    font-family: var(--font-default);
+    font-size: 16px;
+    line-height: 25.6px;
+    color: #4F4F5A;
+    margin: 20px 0 40px;
+}
+
+.btn-group {
+    display: inline-flex;
+
+}
+
+.home .btn-main {
+    background-color: var(--main-clr);
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 0 100vh 100vh 100vh;
+}
+
+.home .video-btn {
+    position: relative;
+    text-decoration: none;
+    height: 20px;
+    color: #212529;
+    padding: 10px 25px;
+    margin-left: 20px;
+    font-weight: 600;
+    transition: .4s;
+}
+
+.home .video-btn:hover {
+    color:var(--main-clr);
+}
+.home .video-btn:hover .icon {
+    color:var(--main-clr);
+}
+
+.icon {
+    color: #212529;
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: linear-gradient(to right, var(--main-clr) 0 50%, transparent 50% 100%);
+    transition: .4s;
+
+}
+
+.icon::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.icon i {
+    z-index: 2;
+}
+
+.video-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* chefs section */
+
+.chefs .container {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin:3.125rem;
+    padding: 2.5rem 0.3125rem;
+    
+}
+
+.chefs .container .chefs-title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1.5625rem;
+}
+
+.chefs .container .chefs-cards {
+    display: flex;
+}
+
+.chefs .container .chefs-card {
+    width: 30%;
+    text-align: center;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.chefs-card picture{
+    position: relative;
+}
+
+.chefs-card picture::before{
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    background-image: url(../images/team-shape.svg);
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 3.75rem;
+}
+
+.chefs .container .chefs-card img {
+    width: 100%;
+}
+
+/* gallery section */
+
+.gallery {
+    width: 100%;
+    background-color: var(--second-bg);
+}
+
+.gallery .container {
+    flex-wrap: wrap;
+}
+
+.gallery .gallery-title {
+    width: 100%;
+}
+
+
+.gallery-items {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    height: 1000px;
+    justify-content: center;
+    align-content: center;
+}
+
+.gallery-items .item {
+    display: flex;
+    width: 30%;
+    margin: 1%;
+}
+
+.gallery-items picture img {
+    width: 100%;
+}
+
+/* contact section  */
+
+.contact {
+    width: 100%;
+}
+
+.contact .container {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact .contact-title {
+    width: 100%;
+    text-align: center;
+}
+
+.contact-content {
+    width: 100%;
+}
+
+.contact form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.contact .in50 {
+    width: 45%;
+}
+
+.contact .in100 {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+}
+
+/* footer section */
+footer {
+    background-color: #000;
+    color: #fff;
+}
