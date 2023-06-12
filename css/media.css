@@ -1,0 +1,437 @@
+@media all and (max-width:565px) {
+
+    nav .links {
+        display: none;
+    }
+
+    .home {
+        height: auto;
+        width: 100%;
+    }
+
+    .home .container {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .home .home-content {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .home .home-image {
+        width: 100%;
+    }
+
+    .btn-group {
+        justify-content: center;
+        margin: auto;
+
+    }
+
+    .home .btn-main {
+        border-radius: 100vh;
+
+    }
+
+    .chefs .container .chefs-card {
+        width: 100%;
+
+    }
+
+    .gallery-items {
+        height: auto;
+        gap: 20px;
+    }
+
+    .gallery-items .item {
+        width: 100%;
+    }
+
+    .contact-content .item-cont {
+        width: 100%;
+    }
+
+    .contact .in50 {
+        width: 100%;
+    }
+
+    footer .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    footer .about {
+        width: 100%;
+
+    }
+
+    footer .subscription {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    footer .contact-details {
+        width: 100%;
+    }
+
+    .subscription-group {
+        flex-wrap: wrap;
+        gap: 10px;
+
+    }
+
+    .subscription-group input {
+        width: 100%;
+        margin: 0 0;
+        margin-top: 15px;
+
+    }
+
+    .subscription-group button {
+        width: 100%;
+        margin: 0 0;
+
+    }
+}
+
+/* ---------------------------------------- */
+
+@media all and (min-width:566px) {
+    .container {
+        max-width: 540px;
+    }
+
+    nav .links {
+        display: none;
+    }
+
+    .home {
+        height: auto;
+        width: 100%;
+    }
+
+    .home .container {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .home .home-content {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .home .home-image {
+        width: 100%;
+    }
+
+    .btn-group {
+        justify-content: center;
+        margin: auto;
+
+    }
+
+    .home .btn-main {
+        border-radius: 100vh;
+
+    }
+
+    .chefs .container .chefs-card {
+        width: 100%;
+
+    }
+
+    .gallery-items {
+        height: auto;
+        gap: 20px;
+    }
+
+    .gallery-items .item {
+        width: 100%;
+    }
+
+    .contact-content .item-cont {
+        width: 100%;
+    }
+
+    .contact .in50 {
+        width: 100%;
+    }
+
+    footer .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    footer .about {
+        width: 100%;
+
+    }
+
+    footer .subscription {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    footer .contact-details {
+        width: 100%;
+    }
+
+    .subscription-group {
+        flex-wrap: wrap;
+        gap: 10px;
+
+    }
+
+    .subscription-group input {
+        width: 100%;
+        margin: 0 0;
+        margin-top: 15px;
+
+    }
+
+    .subscription-group button {
+        width: 100%;
+        margin: 0 0;
+
+    }
+
+}
+
+/* ----------------------------------------------- */
+
+@media all and (min-width:768px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .chefs .container .chefs-card {
+        width: 48%;
+
+    }
+
+    .gallery-items {
+        height: 1405px;
+    }
+
+    .gallery-items .item {
+        width: 50%;
+    }
+
+    .contact-content .item-cont {
+        width: 49.5%;
+    }
+
+    footer .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5%;
+    }
+
+    footer .about {
+        width: 47.5%;
+        order: 1;
+    }
+
+    footer .subscription {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        order: 2;
+        margin-top: 20px;
+    }
+
+    footer .contact-details {
+        width: 47.5%;
+        order: 1;
+    }
+
+    .subscription-group {
+        flex-wrap: wrap;
+        gap: 10px;
+
+    }
+
+    .subscription-group input {
+        width: 100%;
+        margin: 0 0;
+        margin-top: 15px;
+
+    }
+
+    .subscription-group button {
+        width: 100%;
+        margin: 0 0;
+
+    }
+}
+
+/* --------------------------------------------- */
+
+@media all and (min-width:992px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .home {
+        height: auto;
+        width: 100%;
+    }
+
+    .home .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .home .home-content {
+        width: 40%;
+        margin-bottom: 40px;
+        text-align: left;
+    }
+
+    .home .home-image {
+        width: 40%;
+    }
+
+    .btn-group {
+        justify-content: flex-start;
+
+    }
+
+    .home .btn-main {
+        border-radius: 0 100vh 100vh 100vh;
+
+    }
+
+    .chefs .container .chefs-card {
+        width: 31%;
+
+    }
+
+    .gallery-items {
+        height: 845px;
+        gap: 20px;
+    }
+
+    .gallery-items .item {
+        width: 33%;
+    }
+
+    .contact-content .item-cont {
+        width: 49.5%;
+    }
+
+    .contact .in50 {
+        width: 46%;
+    }
+
+    .subscription-group {
+        flex-wrap: nowrap;
+        gap: 10px;
+        margin-top: 20px;
+
+    }
+
+    .subscription-group input {
+        width: auto;
+        margin-top: 0;
+        flex-grow: 1;
+
+    }
+
+    .subscription-group button {
+        width: auto;
+        margin: 0 0;
+
+    }
+
+
+
+}
+/* -------------------------------------------- */
+
+@media all and (min-width:1200px) {
+    .container {
+        max-width: 1140px;
+    }
+
+    nav .links {
+        display: flex;
+    }
+
+    .gallery-items {
+        height: 1000px;
+    }
+
+    footer .container {
+        column-gap: 10px;
+        justify-content: space-between;
+        align-items: flex-start;
+    
+    }    
+
+    footer .about {
+        width: 23.5%;
+        align-items: flex-start;
+    
+    }
+
+    footer .subscription {
+        width: 47%;
+        align-items: flex-start;
+        order: 1;
+    }
+
+    footer .contact-details {
+        width: 23.5%;
+    }
+
+    .subscription-group {
+        flex-wrap: nowrap;
+        gap: 10px;
+        margin-top: 20px;
+
+    }
+
+    .subscription-group input {
+        width: auto;
+        margin-top: 0;
+        flex-grow: 1;
+
+    }
+
+    .subscription-group button {
+        width: auto;
+        margin: 0 0;
+
+    }
+
+}
+
+@media all and (min-width:1400px) {
+    .container {
+        max-width: 1320px;
+
+    }
+
+    .home .container {
+        max-width: 1320px;
+
+    }
+
+
+}
